@@ -1,13 +1,59 @@
-<head>
-  <title>Test site</title>
-</head>
 
-<body>
-  <h2>My test site</h2>
-  <ul>
-    <li>first line</li>
-    <li>second line</li>
-  </ul>
-  
-  <a href="https://kubsu.ru">КубГУ</a>
-</body>
+<!DOCTYPE html>
+
+<html lang="ru">
+
+  <head>
+    <title>Задание 1</title>
+  </head>
+
+  <body>
+
+    <h1>Нумерованный список гиперссылок с формой</h1>
+     <form action="/"
+      method="POST">
+        <label>
+        Введите ваше имя:<br />
+        <input name="field-name-1"
+          placeholder="Например: Петя" />
+      </label><br />
+
+    <label>
+        Введите вашу почту:<br />
+        <input name="field-name-1"
+          placeholder="Ваша почта" />
+      </label><br />
+
+    <h2>Список интернет-магазинов:</h2>
+
+    <ol>
+      <li><a href="https://ozon.ru">Сайт</a></li>
+      <li><a href="https://www.wildberries.ru">Сайт</a></li>
+      <li><a href="https://www.aliexpress.com">Сайт</a></li>
+    </ol>
+    
+    <label>
+        Какой сайт понравился больше:<br />
+        <select name="field-name-3">
+          <option value="Значение0" selected="selected">Выберите сайт</option>
+          <option value="Значение1">Ozon</option>
+          <option value="Значение2">Wildberries</option>
+          <option value="Значение3">Aliexpress</option>
+        </select>
+      </label><br />
+
+    <label>
+        Что именно вам понравилось:<br />
+        <textarea name="field-name-2"></textarea>
+      </label><br />
+         <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        Поставьте галочку, если вы заполнили всю форму</label><br />
+
+      Нажмите отправить, если все заполнили и подтвердили заполнение:
+      <input type="submit" value="Отправить" />
+  </form>
+  </body>
+
+</html>
+ 
