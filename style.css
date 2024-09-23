@@ -1,0 +1,73 @@
+body
+{
+    margin:0;
+    background-color: #026873;
+    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
+}
+
+header
+{
+    width:100%; 
+    background-color:#5f05c7;
+    padding:0px; 
+    height:120px;
+}
+
+.logo
+{
+    float:left;
+    margin:10px;
+    width:100px;
+    height:100px;
+}
+
+.logoblock
+{
+    background-color:#b77afd;
+    padding:5px;
+    margin:10px;
+}
+
+.navrefer
+{
+    margin:200px;
+}
+
+.cap
+{
+    text-align: center;
+    font-family: annabelle, cursive;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px; 
+    color: #e0efd5;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th
+{
+    padding: 10px; 
+    border: 1px solid #ffffff;
+}
+td
+{
+    font-size: 0.8em;
+    padding: 5px 7px;
+    border: 1px solid #ffffff;
+}
+.first
+{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
