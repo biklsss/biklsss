@@ -5,20 +5,116 @@
 <html lang="ru">
 
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>Задание 1</title>
   </head>
 
-  <body style="margin:10px;">
-    <div style="width:100%; background-color:#5f05c7; padding:0px; height:120px;">  
-        <img style="float:left; margin:10px; width:100px; height:100px;" src="image.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
-        <div style="background-color:#b77afd; padding:5px; margin:10px;  ;">Какой-то текст ...
-            <a style="margin:300px" href="https://">Ссылка меню 1 </a>
-            <a href="https://">Ссылка меню 2 </a>
-            <a style="margin:300px" href="https://">Ссылка меню 3 </a>
+  <body>
+    <header>  
+        <img class="logo" src="image.png" alt="Описание картинки для скрин-ридеров и поисковиков" />
+        <div class="logoblock">Какой-то текст ...
+          <nav>  
+            <a class="navrefer" href="https://">Ссылка меню 1 </a>
+            <a class="navrefer" href="https://">Ссылка меню 2 </a>
+            <a class="navrefer" href="https://">Ссылка меню 3 </a>
+          </nav>
         </div>
-    </div>
+      </header>
     <h1>Нумерованный список гиперссылок с формой</h1>
-     <form action="/"
+
+    <div id="tab" class="midblock">
+      <h1 class="cap">Меню ресторана "Ромашка"</h1>
+      <table>
+        <tr>
+          <th rowspan="2" class="first">Кухня</th>
+          <th colspan="2">Холодные блюда</th>
+          <th colspan="2">Горячие блюда</th>
+          <th rowspan="2">Десерты</th>
+        </tr>
+        <tr>
+          <td class="first">Салаты</td>
+          <td class="first">Закуски</td>
+          <td class="first">Первые блюда</td>
+          <td class="first">Вторые блюда</td>
+        </tr>
+        <tr>
+          <td rowspan="3" class="first">Русская</td>
+          <td>Винегрет</td>
+          <td>Язык с хреном</td>
+          <td>Щи с квашеной капустой</td>
+          <td>Вареники с картошкой</td>
+          <td>Печеные яблоки с медом</td>
+        </tr>
+        <tr>
+          <td>Оливье</td>
+          <td>Студень говяжий</td>
+          <td>Рассольник домашний</td>
+          <td>Караси запеченые в сметане</td>
+          <td>Блинчатый пирог</td>
+        </tr>
+        <tr>
+          <td>Сельдь под "шубой"</td>
+          <td>Судак заливной</td>
+          <td>Мясная солянка</td>
+          <td>Котлеты "Пожарские"</td>
+          <td>Пирожное "Картошка"</td>
+          </tr>
+        <tr>
+          <td rowspan="3" class="first">Испанская</td>
+          <td>Севиче из гребешков</td>
+          <td>Эмпанадас</td>
+          <td>Хлебный суп с чесноком</td>
+          <td>Паэлья с морепродуктами</td>
+          <td>Чуррос</td>
+          </tr>
+        <tr>
+          <td>Тимбал из авокадо и тунца</td>
+          <td>Ахотомате</td>
+          <td>Астурийская фабада</td>
+          <td>Свиное раксо</td>
+          <td>Альмойшавена</td>
+          </tr>
+        <tr>
+          <td>Фасоль с ветчиной</td>
+          <td>Чанфайна</td>
+          <td>Рыбный суп с манными клецками </td>
+          <td>Тортилья картофельная</td>
+          <td>Бунуэлос</td>
+          </tr>
+        <tr>
+          <td rowspan="3" class="first">Французская</td>
+          <td>Вогезский салат</td>
+          <td>Рийет из курицы</td>
+          <td>Баклажанный крем-суп "Ренуар"</td>
+          <td>Картофель огратен</td>
+          <td>Бриоши</td>
+          </tr>
+        <tr>
+          <td>Салат "Панзанелла"</td>
+          <td>Делисьез из сыра</td>
+          <td>Французский тыквенный суп</td>
+          <td>Гратин из птицы</td>
+          <td>Лигурийский лимонный пирог</td>
+          </tr>
+        <tr>
+          <td>Тар-тар</td>
+          <td>Маринованный лосось</td>
+          <td>Суп "Конти"</td>
+          <td>Тартифлетт</td>
+          <td>Саварен "Триумф"</td>
+          </tr>
+      </table>
+    </div>
+      
+    <h2>Список интернет-магазинов:</h2>
+
+    <ol>
+      <li><a href="https://ozon.ru">Сайт</a></li>
+      <li><a href="https://www.wildberries.ru">Сайт</a></li>
+      <li><a href="https://www.aliexpress.com">Сайт</a></li>
+    </ol>
+    
+    <form action="/"
       method="POST">
         <label>
         Введите ваше имя:<br />
@@ -32,23 +128,15 @@
           placeholder="Ваша почта" />
       </label><br />
 
-    <h2>Список интернет-магазинов:</h2>
-
-    <ol>
-      <li><a href="https://ozon.ru">Сайт</a></li>
-      <li><a href="https://www.wildberries.ru">Сайт</a></li>
-      <li><a href="https://www.aliexpress.com">Сайт</a></li>
-    </ol>
-    
     <label>
-        Какой сайт понравился больше:<br />
-        <select name="field-name-3">
-          <option value="Значение0" selected="selected">Выберите сайт</option>
-          <option value="Значение1">Ozon</option>
-          <option value="Значение2">Wildberries</option>
-          <option value="Значение3">Aliexpress</option>
-        </select>
-      </label><br />
+      Какой сайт понравился больше:<br />
+      <select name="field-name-3">
+        <option value="Значение0" selected="selected">Выберите сайт</option>
+        <option value="Значение1">Ozon</option>
+        <option value="Значение2">Wildberries</option>
+        <option value="Значение3">Aliexpress</option>
+      </select>
+    </label><br />
 
     <label>
         Что именно вам понравилось:<br />
@@ -60,7 +148,7 @@
 
       Нажмите отправить, если все заполнили и подтвердили заполнение:
       <input type="submit" value="Отправить" />
-  </form>
+    </form>
    </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
    <div style="width:100%; background-color:#5f05c7; padding: 10px; height:20px; margin: -2px;"> <a style="margin:45%;">(c) Имя Фамилия 2024</a></div>
   </body>
