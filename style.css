@@ -12,9 +12,10 @@ body
 header
 {
     width:100%; 
-    background-color:#5f05c7;
-    padding:0px; 
-    height:120px;
+    background-color:#e0efd5;
+    padding:20px;
+    margin-bottom:20px; 
+    height: 100px;
 }
 
 .logo
