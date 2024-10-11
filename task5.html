@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <title> Task №5 </title>
+        <script defer src="calc.js"></script>
+    </head>
+
+    <body style="display: flex; flex-direction: column;">
+        <h2 style="margin-left: auto; margin-right: auto;"> Практическое задание №5 </h2>
+        <div style="margin-left: auto; margin-right: auto; width: 35%; background-color: #66d; border: solid; border-color: #000000;">
+            <h3 style="text-align: center;">Выберите товар</h3>
+            <select id="goodsList" style="display: flex; margin-left: auto; margin-right: auto; background-color: #c4dbff; margin-top: 20px;">
+                <option value="ch1">Тетрадь (10₽)</option>
+                <option value="ch2">Чёрная ручка (25₽)</option>
+                <option value="ch3">Красная ручка (30₽)</option>
+                <option value="ch4">Тетрадь A4, 80 листов (500₽)</option>
+                <option value="ch5">Тетрадь A5, 100 листов (450₽)</option>
+            </select>
+            <input id="amount" placeholder="Количество" style="display: flex; margin-left: auto; margin-right: auto; background-color: #c4dbff; margin-top: 15px;">
+            <button id="calculate" style="display: flex; order: 2; margin-left: auto; margin-top: 20px; margin-right: auto; background-color:#c4dbff;"> Посчитать </button>
+            <div style="display: flex; flex-direction: column;">
+                <h4 style="margin-left: auto; margin-right: auto;"> Результат: </h4>
+                <div id="result" style="margin-left: auto; margin-right: auto; color:#861616; font-size: 25px"></div>
+            </div>
+        </div>
+    </body>
+</html>
