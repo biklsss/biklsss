@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <title> Task №6 </title>
+        <script defer src="calc.js"></script>
+    </head>
+
+    <body style="display: flex; flex-direction: column;">
+        <h2 style="margin-left: auto; margin-right: auto;"> Практическое задание №6 </h2>
+        <div style="margin-left: auto; margin-right: auto; width: 35%; background-color: #66d; border: solid; border-color: #000000;">
+            <h3 style="text-align: center;">Выберите товар</h3>
+            <select id="goodsList" style="display: flex; margin-left: auto; margin-right: auto; background-color: #c4dbff; margin-top: 20px;">
+                <option value="ch1">Тетрадь (10₽)</option>
+                <option value="ch2">Ручка (25₽)</option>
+                <option value="ch3">Блочная тетрадь (300 руб)</option>
+            </select>
+            <input id="amount" placeholder="Количество" style="display: flex; margin-left: auto; margin-right: auto; background-color: #c4dbff; margin-top: 15px;">
+            <div style="text-align: center;" class="favour" id="favour">
+                <p><input type="radio" name="favour" value="r1">Доставка в пункт выдачи</p>
+                <p><input type="radio" name="favour" value="r2">Доставка курьером</p>
+                <p><input type="radio" name="favour" value="r3">Самовывоз</p>
+            </div>
+            <div id="BlockA" style="text-align: center; display:flex; flex-direction: column;">
+                <label><input type="checkbox" name="quentity1" value="c12">12 листов</label>
+                <label><input type="checkbox" name="quentity1" value="c24">24 листа</label>
+                <label><input type="checkbox" name="quentity1" value="c48">48 листов</label>
+            </div>
+            <div id="BlockC" style="text-align: center; display:none;">
+                <label><input type="checkbox" name="quentity2" value="c80">80 листов</label>
+                <label><input type="checkbox" name="quentity2" value="c120">120 листов</label>
+            </div>
+            <div id="BlockB" style="text-align: center; display:none;">
+                <label><input type="checkbox" name="color" value="blue">Синий</label>
+                <label><input type="checkbox" name="color" value="red">Красный</label>
+                <label><input type="checkbox" name="color" value="black">Чёрный</label>
+            </div>
+            <button id="calculate" style="display: flex; order: 2; margin-left: auto; margin-top: 20px; margin-right: auto; background-color:#c4dbff;"> Посчитать </button>
+            <div style="display: flex; flex-direction: column;">
+                <h4 style="margin-left: auto; margin-right: auto;"> Результат: </h4>
+                <div id="result" style="margin-left: auto; margin-right: auto; color:#861616; font-size: 25px"></div>
+            </div>
+        </div>
+    </body>
+</html>
