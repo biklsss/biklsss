@@ -128,3 +128,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const recaptcha = document.querySelector(".g-recaptcha");
   recaptcha.setAttribute("data-theme", "dark");
 });
+
+$('form').on('submit', function(event) {
+  event.preventDefault();
+  let $form = $(this);
+  let $inputs = $form.find('input, button, textarea');
+  let serializedData = $form.serialize();
+  $inputs.prop('disabled', true);
+  $.ajax({
+      complete: function() {
+          $inputs.prop('disabled', false);
+      },
+      data: serializedData,
+      type: 'POST',
+      url: "https://formcarry.com/s/opscdKDbv7V"
+  });
+});
